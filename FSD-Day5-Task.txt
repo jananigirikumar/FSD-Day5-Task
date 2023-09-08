@@ -1,0 +1,81 @@
+const countryArr = ["IND", "CHI", "UK", "US"];
+for (let i = 0; i<countryArr.length; i++)
+{
+console.log(countryArr[i])
+}
+const countryObj = {
+India = "IND",
+China = "CHI",
+United Kingdom = "UK",
+United States = "US"
+}
+
+1. Using For loop
+
+const objectValue = object.values(countryObj);
+//console.log(objectValue);
+
+for (let i = 0; i<objectValue.length; i++)
+{
+console.log(objectValue[i]);
+}
+
+const objectKeys = object.keys(countryObj);
+//console.log(objectValue);
+
+for (let i = 0; i<objectKeys.length; i++)
+{
+console.log(objectKeys[i]);
+}
+
+2. Using ForEach loop
+
+countryArr.forEach(value, index, accArr) => {
+console.log(`
+value : ${value}
+Index : ${Index}
+AccArr : ${accArr}
+`)
+}
+
+3. Using ForIn loop
+
+for(k in countryObj){
+console.log(`
+keys : ${k}
+values: ${countryObj[k]}
+`);
+}
+
+4. Using ForOf loop
+
+for (key of countryArr)
+{
+console.log(`Array Key : ${key}`)
+}
+------------------------------------------------------------------------------------
+
+Create my own resume with JSON data
+
+let resume = {
+"Basics": 
+{
+"Name" : "Janani",
+"Age" : 24,
+"Email Address" : "janani27girikumar@gmail.com",
+"Location" : {
+"Address" : "No. 21, Anna Salai",
+"City" : "Chennai",
+"Pincode" : 600118,
+}
+},
+"Education" : "BE",
+"Specialisation" : "Electronics and Communication",
+"Passed-out year" : 2020
+}
+
+console.log(resume);
+----------------------------------------------------------------------------------------
+
+
+
